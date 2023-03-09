@@ -7,7 +7,12 @@ export default defineConfig({
   plugins: [react({
     include: "**/*.tsx",
   })],
+  server: {
+    watch: {
+      usePolling: true
+    }
+  },
   resolve: {
-    alias: [{find: '@' , replacement: path.resolve(__dirname, 'src')}]
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }]
   } // give absolute path when using @
 })

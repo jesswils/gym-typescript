@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import Navbar from "@/components/navbar"
 
-function App() {
+const App = () => {
   return (
-   <div className='app'>App</div>
+   <div className='app'>
+    <Navbar />
+   </div>
   )
 }
 
