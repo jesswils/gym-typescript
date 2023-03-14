@@ -7,16 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "text-black" : "#3c3c3c",
+        "onyx-black" : "#3c3c3c",
         "bg-white" : "#F5F5F5",
         "text-grey" : "#5E6472",
+        "text-grey-light" : "#6C757D",
+        "text-white" : "#F8F9FA",
         "grey-blue": "#FCFFFC",
         "grey-green" : "#F2F7F2",
         "green" : "#B3DEC1"
       },
-      backgroundImage: (theme) => ({
-        "desktop-home": "url('./bg.jpg')"
-      }),
+      backgroundImage: {
+        "desktop-home": "url('/bg.jpg')"
+      },
       fontFamily: {
         dmDisplay: ["DM Serif Display", "sans-serif"],
         dmText: ["DM Serif Text", "serif"],
@@ -29,5 +31,5 @@ module.exports = {
       md: "1060px"
     }
   },
-  plugins: [],
-}
+  plugins: []
+};

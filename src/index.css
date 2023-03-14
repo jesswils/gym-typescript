@@ -4,8 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html, 
-body, 
+html {
+    background-image: url('./assets/bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body,
 #root,
 .app {
     height: 100%;
@@ -14,11 +21,10 @@ body,
     @apply text-black
 }
 
-body {
-    background-image: url('@/assets/bg.jpg;');
-}
-
 .logo {
     height: 10em;
     width: 10em;
 }
+
+/* font-family: 'DM Serif Display', serif;
+font-family: 'DM Serif Text', serif; */
