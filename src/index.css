@@ -4,19 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    background-image: url('./assets/bg.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
+html,
 body,
 #root,
 .app {
     height: 100%;
     width: 100%;
+    background-image: url('./assets/bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: "Golos Text", sans-serif;
     @apply text-black
 }
