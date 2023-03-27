@@ -9,12 +9,12 @@ module.exports = {
       colors: {
         "onyx-black" : "#3c3c3c",
         "bg-white" : "#F5F5F5",
-        "text-grey" : "#5E6472",
-        "text-grey-light" : "#6C757D",
-        "text-white" : "#F8F9FA",
+        "grey" : "#5E6472",
+        "grey-light" : "#6C757D",
+        "white" : "#F8F9FA",
         "grey-blue": "#FCFFFC",
         "grey-green" : "#F2F7F2",
-        "green" : "#B3DEC1"
+        "blue-green" : "#B3DEC1",
       },
       backgroundImage: {
         "desktop-home": "url('/bg.jpg')"
@@ -25,6 +25,10 @@ module.exports = {
         golos: ["Golos Text", "serif"]
       }, 
     },
+      animation: {
+        'wiggle': 'wiggle 1s ease-in-out infinite',
+        'spin-slow': 'spin 20s linear infinite',
+      },
     screens: {
       xs: "480px",
       sm: "768px",
