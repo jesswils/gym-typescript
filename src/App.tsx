@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Navbar from "@/components/navbar";
 import Home from "@/components/home"
+import Vinyl from '@/components/vinyl';
 import { SelectedPage } from "@/utils/types";
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage} />
-        <Home  setSelectedPage={setSelectedPage} />
+        <Home setSelectedPage={setSelectedPage} />
+        <Vinyl setSelectedPage={setSelectedPage} />
     </div>
   );
 };
