@@ -1,5 +1,5 @@
 import useMediaQuery from '@/hooks/useMediaQuery'
-import HomePageText from '@/assets/homepage-logo.png'
+import HomePageText from '@/assets/logo-lg.png'
 import { SelectedPage } from '@/utils/types'
 import { motion } from 'framer-motion'
 import HomePageGraphic from '@/assets/temp-image.png'
@@ -33,7 +33,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     >
                         <div className='relative'>
                             <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
-                                <img src={HomePageText} alt='home page text' />
+                                <img src={HomePageText} alt='home page text' className='h-96' />
                             </div>
                         </div>
                         <p className='homepage-intro mt-8 text-xl font-dmDisplay text-stone-50 '>
