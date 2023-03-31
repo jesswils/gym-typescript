@@ -46,7 +46,7 @@ const Home = ({ setSelectedPage }: Props) => {
             <div
                 className="flex basis-3/5 justify-center"
             >
-                <img alt="home-pageGraphic" src={HomePageGraphic} className='home-page-graphic' />
+                {/* <img alt="home-pageGraphic" src={HomePageGraphic} className='home-page-graphic' /> */}
             </div>
         </section>
     )
