@@ -1,5 +1,5 @@
 import { SelectedPage, VinylType } from '@/utils/types'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import HText from '@/utils/HText'
 import Vinyl from './Vinyl'
 
@@ -31,6 +31,13 @@ const vinyls: Array<VinylType> = [
   }
 ]
 
+const container = {
+  hidden: {},
+  visible: {
+    transition: {staggerChildren: 0.2}
+  }
+}
+
 const Vinyls = ({setSelectedPage}: Props) => {
   return (
     <section id='vinyl' className='mx-auto min-h-full w-5/6 py-20'>
@@ -39,7 +46,13 @@ const Vinyls = ({setSelectedPage}: Props) => {
                 <HText>Not your typical record store</HText>
                 <p>We provide the most eclectic mix of records from around the world</p>
             </div>
-            <div className='mt-5 items-center justify-between gap-8 md:flex'>
+            <motion.div
+             className='mt-5 items-center justify-between gap-8 md:flex'
+             initial='hidden'
+             whileInView='visible'
+             viewport={{once: true, amount: 0.5}}
+             variants={container}
+             >
               {vinyls.map((vinyl: VinylType) => (
                 <Vinyl 
                 key={vinyl.title}
@@ -51,7 +64,7 @@ const Vinyls = ({setSelectedPage}: Props) => {
                 setSelectedPage={setSelectedPage}
                 />
               ))}
-            </div>
+            </motion.div>
         </motion.div>
     </section>
   )

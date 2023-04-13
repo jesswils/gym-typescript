@@ -11,7 +11,8 @@ body,
 .app {
     height: 100%;
     width: 100%;
-    background-image: url('./assets/bg.jpg');
+    /* background-image: url('./assets/bg.jpg' ); */
+    background-color: #3c3c3c82;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,15 +25,26 @@ body,
     width: 10em;
 }
 
-.homepage-intro {
-    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.938);
-    font-weight: 400;
-    font-family: 'Bebas Neue', cursive;
-}
-
 .home-page-graphic {
     width: 40%;
 }
 
+.img {
+    height: auto; 
+    width: auto; 
+    max-width: 24rem; 
+    max-height: 24rem;
+}
+
+/* .nav:hover {
+    background-color:rgba(208, 46, 46, 0.938);
+    transform: perspective(1px) translateZ(0);
+    transition: transform 0.5s ease-in-out;
+    transition-property: box-shadow;
+  } */
+
+  .nav-link:hover {
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
 /* font-family: 'DM Serif Display', serif;
 font-family: 'DM Serif Text', serif; */

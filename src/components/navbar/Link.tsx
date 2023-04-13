@@ -1,3 +1,4 @@
+import useMediaQuery from '@/hooks/useMediaQuery';
 import { SelectedPage } from '@/utils/types';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -9,12 +10,13 @@ type Props = {
 
 const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
-
+  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
+  
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? 'text-grey-green' : ''}
-      transition duration-500 hover:text-blue-green text-xl text-neutral-50
-      font-medium tracking-wider
+      className={`${selectedPage === lowerCasePage ? 'text-logo-cream' : '' }
+      transition duration-200 hover:text-logo-cream text-xl
+      nav-link
     `}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}

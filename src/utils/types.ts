@@ -1,13 +1,13 @@
 export enum SelectedPage {
     Home = "home",
-    Vinyl = "vinyl",
-    Merch = "merch",
-    Help = "help"
+    Benefits = "benefits",
+    Classes = "classes",
+    ContactUs = "contactus"
 }
 
 export interface VinylType {
     artist: string;
-    image: JSX.Element,
+    image: JSX.Element;
     title: string;
     description: string;
     price: string,

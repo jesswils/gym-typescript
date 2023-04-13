@@ -8,13 +8,15 @@ module.exports = {
     extend: {
       colors: {
         "onyx-black" : "#3c3c3c",
-        "bg-white" : "#F5F5F5",
-        "grey" : "#5E6472",
-        "grey-light" : "#6C757D",
         "white" : "#F8F9FA",
-        "grey-blue": "#FCFFFC",
-        "grey-green" : "#F2F7F2",
-        "blue-green" : "#B3DEC1",
+        "logo-cream" : "#fff5e1",
+        "powder-white" : "#FFFFFA",
+        "accent-white" : "#fffbf0",
+        "grey-light" : "#6C757D",
+        "payne-grey" : "#476A6F",
+        "carribean-blue": "#0D5C63",
+        "light-green" : "#F2F7F2",
+        "tiffany-blue" : "#78CDD7",
       },
       backgroundImage: {
         "desktop-home": "url('/bg.jpg')"
