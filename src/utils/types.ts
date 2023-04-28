@@ -5,10 +5,9 @@ export enum SelectedPage {
     ContactUs = "contactus"
 }
 
-export interface VinylType {
-    artist: string;
-    image: JSX.Element;
+
+export interface BenefitType {
+    icon: JSX.Element;
     title: string;
     description: string;
-    price: string,
-}
+  }

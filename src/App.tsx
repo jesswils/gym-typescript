@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import Navbar from "@/components/navbar";
 import { SelectedPage } from "@/utils/types";
-import Vinyls from '@/components/vinyl';
 import Home from '@/components/home';
+import Benefits from './components/benefits/';
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -27,7 +27,7 @@ const App = () => {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage} />
         <Home setSelectedPage={setSelectedPage} />
-        {/* <Vinyls setSelectedPage={setSelectedPage} /> */}
+        <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 };
