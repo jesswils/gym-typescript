@@ -2,7 +2,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import HomePageText from '@/assets/logo-tagline.png'
 import { SelectedPage } from '@/utils/types'
 import { motion } from 'framer-motion'
-import HomePageGraphic from '@/assets/temp-image.png'
+import HomePageGraphic from '@/assets/homepage-img.jpg'
 import ActionButton from '@/utils/ActionButton'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -35,9 +35,9 @@ const Home = ({ setSelectedPage }: Props) => {
                     }}
                     >
                         <div className='relative'>
-                            <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1]'>
-                                <img src={HomePageText} alt='home page text' className='h-80 w-80' />
-                            </div>className='h-96'
+                            <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-gymtext'>
+                                <img src={HomePageText} alt='home page text' />
+                            </div>
                         </div>
 
                         <p className='homepage-intro mt-8 text-4xl font-golos font-extrabold text-accent-white tracking-normal leading-normal'>
@@ -71,6 +71,13 @@ const Home = ({ setSelectedPage }: Props) => {
             </AnchorLink>
           </motion.div>
           </div>
+          {/* image */}
+          <div
+          className="flex basis-3/5 justify-center md:z-10
+              md:ml-40 md:mt-16 md:justify-items-end"
+        >
+          <img alt="home-pageGraphic" src={HomePageGraphic} />
+        </div>
           </motion.div>
         </section>
     )

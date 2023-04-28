@@ -18,8 +18,11 @@ module.exports = {
         "light-green" : "#F2F7F2",
         "tiffany-blue" : "#78CDD7",
       },
-      backgroundImage: {
-        "desktop-home": "url('/bg.jpg')"
+      content: {
+        gymtext: "url('./assets/truegym-text.png')",
+        abstractwaves: "url('./assets/AbstractWaves.png')",
+        sparkles: "url('./assets/Sparkles.png')",
+        circles: "url('./assets/Circles.png')",
       },
       fontFamily: {
         dmDisplay: ["DM Serif Display", "sans-serif"],
