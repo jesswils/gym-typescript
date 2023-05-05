@@ -1,10 +1,43 @@
 import HText from '@/utils/HText';
-import { SelectedPage } from "@/utils/types";
+import { SelectedPage, ClassType } from "@/utils/types";
 import { motion } from 'framer-motion';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
   };
+
+  const classes: Array<ClassType> = [
+    {
+      name: 'Cardio',
+      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: image1
+    },
+    {
+      name: 'Weight Training',
+      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: image2
+    },
+    {
+      name: 'Strength and Conditioning',
+      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: image3
+    },
+    {
+      name: 'Flexiblity',
+      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: image4
+    },
+    {
+      name: 'Mind and Body',
+      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: image5
+    },
+    {
+      name: 'Cardio',
+      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: image6
+    },
+  ]
 
 const Classes = ({ setSelectedPage }: Props) => {
   return (
@@ -23,14 +56,24 @@ const Classes = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
             >
-                <div>
+                <div className='md:w-3/5'>
                     <HText>Our Classes</HText>
-                    <p>If it’s about sweat we have Cardio, if it’s about being stronger we have Strength & Conditioning or if it’s about flexibility we have Mind & Body. Whatever you are into we have 100's of classes to help you work towards your fitness goals.
+                    <p className='py-5'>If it’s about sweat we have Cardio, if it’s about being stronger we have Strength & Conditioning or if it’s about flexibility we have Mind & Body. Whatever you are into we have 100's of classes to help you work towards your fitness goals.
 They are all completely free, with a packed timetable that is open and available to all, from beginner right through to advanced.</p>
                 </div>
-
             </motion.div>
-            
+            <div className='mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden'>
+              <ul className='w-[2800px] whitespace-nowrap'>
+                {classes.map((item: ClassType, index) => (
+                  <Class 
+                  key={`${item.name}-${index}`}
+                  name={item.name}
+                  description={item.description}
+                  image={item.image}
+                  />
+                ))}
+              </ul>
+            </div>
         </motion.div>
     </section>
   )

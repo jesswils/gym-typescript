@@ -48,3 +48,7 @@ body,
   }
 /* font-family: 'DM Serif Display', serif;
 font-family: 'DM Serif Text', serif; */
+
+li {
+    text-decoration: none;
+}
