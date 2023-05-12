@@ -61,7 +61,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>More than just a gym</HText>
-          <p className="my-5 text-sm">
+          <p className="my-5 text-md">
             We're here for everyday people, to become strong individuals. We
             provide world class fitness equipment, trainers and classes to help
             you find and reach your fitness goals. We put true care into all of
@@ -89,7 +89,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* graphics and description */}
-        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+        <div className="mt-16 items-center justify-between md:mt-28 md:flex">
           {/* graphic */}
           <img src={BenefitsPageGraphic} alt="benefits-page-graphic" className="mx-auto" />
 
