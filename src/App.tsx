@@ -30,7 +30,7 @@ const App = () => {
         setSelectedPage={setSelectedPage} />
         <Home setSelectedPage={setSelectedPage} />
         <Benefits setSelectedPage={setSelectedPage} />
-        {/* <Classes setSelectedPage={setSelectedPage} /> */}
+        <Classes setSelectedPage={setSelectedPage} />
         <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );

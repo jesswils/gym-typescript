@@ -1,6 +1,12 @@
 import HText from '@/utils/HText';
 import { SelectedPage, ClassType } from "@/utils/types";
 import { motion } from 'framer-motion';
+import Class from './Class';
+import image1 from '@/assets/image1.jpg'
+import image2 from '@/assets/image2.jpg'
+import image3 from '@/assets/image3.jpg'
+import image4 from '@/assets/image4.jpg'
+import image5 from '@/assets/image5.jpg'
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -32,11 +38,6 @@ type Props = {
       description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       image: image5
     },
-    {
-      name: 'Cardio',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: image6
-    },
   ]
 
 const Classes = ({ setSelectedPage }: Props) => {
@@ -58,12 +59,13 @@ const Classes = ({ setSelectedPage }: Props) => {
             >
                 <div className='md:w-3/5'>
                     <HText>Our Classes</HText>
-                    <p className='py-5'>If it’s about sweat we have Cardio, if it’s about being stronger we have Strength & Conditioning or if it’s about flexibility we have Mind & Body. Whatever you are into we have 100's of classes to help you work towards your fitness goals.
-They are all completely free, with a packed timetable that is open and available to all, from beginner right through to advanced.</p>
+                    <p className='py-5'>If it’s about sweat we have Cardio, if it’s about being stronger we have Strength & Conditioning or if it’s about flexibility we have Mind & Body.
+                     Whatever you are into we have 100's of classes to help you work towards your fitness goals.
+                    They are all completely free, with a packed timetable that is open and available to all, from beginner right through to advanced.</p>
                 </div>
             </motion.div>
-            <div className='mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden'>
-              <ul className='w-[2800px] whitespace-nowrap'>
+            <div>
+              <ul className='grid grid-cols-2 md:grid-cols-3'>
                 {classes.map((item: ClassType, index) => (
                   <Class 
                   key={`${item.name}-${index}`}

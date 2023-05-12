@@ -110,7 +110,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 >
                 <HText>
                   Millions of happy members getting{" "}
-                  <span className="text-payne-grey"></span>
+                  <span className="text-carribean-blue font-golos drop-shadow-sm  saturate-100 ">fit</span>
                 </HText>
                 </motion.div>
               </div>

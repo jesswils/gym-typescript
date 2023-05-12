@@ -26,7 +26,9 @@ module.exports = {
         dmText: ["DM Serif Text", "serif"],
         golos: ["Golos Text", "serif"]
       }, 
-    },
+      dropShadow: {
+        'sm': '0 0 1px rgba(59, 60, 54, 0.45)',
+      },
       animation: {
         'wiggle': 'wiggle 1s ease-in-out infinite',
         'spin-slow': 'spin 20s linear infinite',
@@ -35,7 +37,8 @@ module.exports = {
       xs: "480px",
       sm: "768px",
       md: "1060px"
-    }
+    },
   },
   plugins: []
+ },
 };
