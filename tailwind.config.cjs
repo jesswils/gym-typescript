@@ -17,6 +17,7 @@ module.exports = {
         "carribean-blue": "#0D5C63",
         "light-green" : "#F2F7F2",
         "tiffany-blue" : "#78CDD7",
+        "neutral" : "#737373"
       },
       content: {
         gymtext: "url('./assets/truegym-text.png')",
@@ -32,6 +33,7 @@ module.exports = {
       animation: {
         'wiggle': 'wiggle 1s ease-in-out infinite',
         'spin-slow': 'spin 20s linear infinite',
+        'bounce' : 'animation: bounce 1s infinite'
       },
     screens: {
       xs: "480px",

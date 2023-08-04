@@ -19,12 +19,12 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
   return (<>
     <motion.div
     onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
-     className='mt-5 rounded-md border-2 border-gray-100 px-4 py-5 text-center'
+     className='mt-5 rounded-md border-2 border-double px-4 py-5 text-center border-neutral'
      variants={childVariant}
      >
         <div className='mb-2 flex justify-center'>
           <AnchorLink>
-            <div className='rounded border-2 border-grey-100 bg-primary-100 p-4'>
+            <div className='rounded border p-4 border-neutral'>
                 {icon}
             </div>
             </AnchorLink>

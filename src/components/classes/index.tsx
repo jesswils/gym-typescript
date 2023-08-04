@@ -8,10 +8,6 @@ import image3 from '@/assets/image3.jpg'
 import image4 from '@/assets/image4.jpg'
 import image5 from '@/assets/image5.jpg'
 
-type Props = {
-    setSelectedPage: (value: SelectedPage) => void;
-  };
-
   const classes: Array<ClassType> = [
     {
       name: 'Cardio',
@@ -40,9 +36,13 @@ type Props = {
     },
   ]
 
+  type Props = {
+    setSelectedPage: (value: SelectedPage) => void;
+  };
+
 const Classes = ({ setSelectedPage }: Props) => {
   return (
-    <section id='classes' className='w-full bg-logo-cream py-40' >
+    <section id='classes' className='w-full bg-logo-cream py-40'>
         <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Classes)}
         >
@@ -64,8 +64,8 @@ const Classes = ({ setSelectedPage }: Props) => {
                     They are all completely free, with a packed timetable that is open and available to all, from beginner right through to advanced.</p>
                 </div>
             </motion.div>
-            <div>
-              <ul className='grid grid-cols-2 md:grid-cols-3'>
+            <div className='mt-10 overflow-x-auto overflow-y-hidden'>
+              <ul className='w-[2800px] whitespace-nowrap'>
                 {classes.map((item: ClassType, index) => (
                   <Class 
                   key={`${item.name}-${index}`}

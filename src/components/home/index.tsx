@@ -1,8 +1,8 @@
 import useMediaQuery from '@/hooks/useMediaQuery'
-import HomePageText from '@/assets/logo-tagline.png'
+import HomePageText from '@/assets/home-page-text.png'
 import { SelectedPage } from '@/utils/types'
 import { motion } from 'framer-motion'
-import HomePageGraphic from '@/assets/homepage-img.jpg'
+import HomePageGraphic from '@/assets/homepage-img.png'
 import ActionButton from '@/utils/ActionButton'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -20,7 +20,7 @@ const Home = ({ setSelectedPage }: Props) => {
             onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
                 {/* main header  */}
-                <div className='z-10 md:basis-3/5'>
+                <div className='z-10 mt-32 md:basis-3/5'>
                     {/* headings */}
                     <motion.div
                     className='md:-mt-20'
@@ -33,16 +33,16 @@ const Home = ({ setSelectedPage }: Props) => {
                       visible: { opacity: 1, x: 0 },
                     }}
                     >
-                        <div className='relative'>
+                        {/* <div className='relative'>
                             <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-gymtext'>
                                 <img src={HomePageText} alt='home page text' />
                             </div>
-                        </div>
+                        </div> */}
 
                         <p className='homepage-intro mt-8 text-4xl font-golos font-extrabold text-accent-white tracking-normal leading-normal'>
                         A studio that offers you more.
-                        <br></br>Building confidence. Celebrating health.
-                        Changing bodies, changing lives.
+                        <br></br>Building confidence.<br></br> Celebrating health.
+                        <br></br>Changing bodies. <br></br>Changing lives.
                         </p> 
                 </motion.div>
 
