@@ -1,18 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react({
-    include: "**/*.tsx",
+    include: '**/*.tsx',
   })],
   server: {
     watch: {
-      usePolling: true
-    }
+      usePolling: true,
+    },
   },
   resolve: {
-    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }]
-  } // give absolute path when using @
-})
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
+  }, // give absolute path when using @
+});
