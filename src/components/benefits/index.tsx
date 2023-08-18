@@ -8,7 +8,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import ActionButton from "@/utils/ActionButton";
-import BenefitsPageGraphic from "@/assets/benefits-page-graphic.png";
+import BenefitsPageGraphic from "@/assets/Pbenefits-page-graphic.png";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
