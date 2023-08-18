@@ -11,27 +11,29 @@ import image5 from '@/assets/image5.jpg'
   const classes: Array<ClassType> = [
     {
       name: 'Cardio',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: `Most people think of running when they want to cardio, but we have a range of exercises and machines to get your heart pumping!
+       Cardio and strength training have a lot of crossover, so if you’re looking for ways to elevate your workout, consider turning it into a full-body routine.`,
       image: image1
     },
     {
       name: 'Weight Training',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: `We have all the exercises you need for a total body workout. Each class includes 8 strength exercises with perfect form and control to hit the whole body.`,
       image: image2
     },
     {
       name: 'Strength and Conditioning',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: `Want to feel stronger? Our Strength & Conditioning classes will help sculpt, tone, condition and strengthen your muscles.`,
       image: image3
     },
     {
       name: 'Flexiblity',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: `A total body workout that combines the 7 key functional movements of squat, lunge, push, pull, hinge, twist and walk/run.
+      Using a mixture of bodyweight and weighted exercises, this is a low-impact class improving your overall strength, balance and mobility.`,
       image: image4
     },
     {
       name: 'Mind and Body',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: `Work on your flexibility, core strength & mental wellbeing. Our Mind & Body classes will leave you feeling strong, calm & centred.`,
       image: image5
     },
   ]
@@ -42,7 +44,7 @@ import image5 from '@/assets/image5.jpg'
 
 const Classes = ({ setSelectedPage }: Props) => {
   return (
-    <section id='classes' className='w-full bg-logo-cream py-40'>
+    <section id='classes' className='w-full bg-logo-cream py-24'>
         <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Classes)}
         >
@@ -64,8 +66,8 @@ const Classes = ({ setSelectedPage }: Props) => {
                     They are all completely free, with a packed timetable that is open and available to all, from beginner right through to advanced.</p>
                 </div>
             </motion.div>
-            <div className='mt-10 overflow-x-auto overflow-y-hidden'>
-              <ul className='w-[2800px] whitespace-nowrap'>
+            <div className='mt-10 w-full overflow-x-auto overflow-y-hidden'>
+              <ul className='w-[2000px] whitespace-nowrap'>
                 {classes.map((item: ClassType, index) => (
                   <Class 
                   key={`${item.name}-${index}`}
