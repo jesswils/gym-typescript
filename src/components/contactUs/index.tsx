@@ -44,9 +44,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 <span className='text-carribean-blue saturate-100 font-golos drop-shadow-sm'>Join now</span> to achieve your fitness goals.
             </HText>
             <p className='my-5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </motion.div>
+                If you would like to discuss anything from booking a class, finding out membership prices or scheduling a free trial,
+                simply complete all details on the form below and a member of the team will be in touch with you as soon as possible.</p>
+                </motion.div>
         {/* form and image */}
         <div className='mt-10 justify-between gap-8 md:flex'>
             <motion.div
