@@ -23,7 +23,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         }
     }
 
-    const inputStyles = `mb-4 w-3/4 rounded-lg bg-light-green opacity-90 px-5 py-3 text-onyx-black`;
+    const inputStyles = `mb-4 w-3/4 rounded-lg bg-light-green opacity-90 px-5 py-3 text-onyx-black focus:outline-none`;
 
   return (
    <section id='contactus' className='mx-auto w-5/6 pt-24 pb-32'>
