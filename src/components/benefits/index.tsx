@@ -1,4 +1,4 @@
-import BenefitsPageGraphic from '@/assets/Pbenefits-page-graphic.png';
+import BenefitsPageGraphic from '@/assets/benefits-page-graphic.png';
 import ActionButton from '@/utils/ActionButton';
 import HText from '@/utils/HText';
 import { BenefitType, SelectedPage } from '@/utils/types';

@@ -67,6 +67,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                 <button
                   className='rounded-full bg-tiffany-blue p-2'
                   onClick={() => setIsMenuToggled(!isMenuToggled)}
+                  title='minimized menu icon'
                 >
                   <Bars3Icon className='h-6 w-6 text-accent-white' />
                 </button>
@@ -84,6 +85,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
           <div className='flex justify-end p-12'>
             <button
               onClick={() => setIsMenuToggled(!isMenuToggled)}
+              title='close the minimised menu'
             >
               <XMarkIcon className='h-6 w-6 text-grey/400' />
             </button>

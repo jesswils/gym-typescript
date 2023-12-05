@@ -13,6 +13,7 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
       className='rounded-md bg-light-green px-10 py-2 hover:bg-carribean-blue hover:text-accent-white'
       onClick={() => setSelectedPage(SelectedPage.ContactUs)}
       href={`#${SelectedPage.ContactUs}`}
+      title='become a member'
     >
       {children}
     </AnchorLink>
