@@ -23,17 +23,17 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
         className='mt-5 rounded-md border-2 border-double px-4 py-5 text-center border-neutral'
         variants={childVariant}
       >
-        <div className='mb-2 flex justify-center'>
+        <div className='mb-2 flex justify-center text-carribean-blue'>
           <AnchorLink>
             <div className='rounded border p-4 border-neutral'>
               {icon}
             </div>
           </AnchorLink>
         </div>
-        <h4 className='pt-0.5 font-medium'>{title}</h4>
-        <p className='my-3'>{description}</p>
+        <h4 className='pt-0.5 font-medium text-dark-brown'>{title}</h4>
+        <p className='my-3 text-dark-brown'>{description}</p>
         <AnchorLink
-          className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
+          className='text-sm font-bold underline text-dark-brown'
           onClick={() => setSelectedPage(SelectedPage.ContactUs)}
           href={`#${SelectedPage.ContactUs}`}
         >

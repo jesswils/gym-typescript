@@ -12,7 +12,7 @@ type Props = {
 
 const Home = ({ setSelectedPage }: Props) => {
   return (
-    <section id='home' className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'>
+    <section id='home' className='gap-16 bg-brown-grey py-10 md:h-full md:pb-0'>
       {/* image and main header */}
       <motion.div
         className='mx-auto w-5/6 items-center justify-center md:flex md:h-5/6'
@@ -32,14 +32,6 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            {
-              /* <div className='relative'>
-                            <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-gymtext'>
-                                <img src={HomePageText} alt='home page text' />
-                            </div>
-                        </div> */
-            }
-
             <p className='homepage-intro mt-8 text-4xl font-golos font-extrabold text-accent-white tracking-normal leading-normal'>
               A studio that offers you more.
               <br></br>Building confidence.<br></br> Celebrating health.
@@ -63,7 +55,7 @@ const Home = ({ setSelectedPage }: Props) => {
               Join Now
             </ActionButton>
             <AnchorLink
-              className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
+              className='text-sm font-bold underline'
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >

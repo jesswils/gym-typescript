@@ -49,7 +49,7 @@ type Props = {
 
 const Classes = ({ setSelectedPage }: Props) => {
   return (
-    <section id='classes' className='w-full bg-logo-cream py-24'>
+    <section id='classes' className='w-full bg-logo-cream pt-16'>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Classes)}
       >
@@ -64,9 +64,9 @@ const Classes = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className='md:w-3/5'>
+          <div className='md:w-3/5 text-onyx-black'>
             <HText>Our Classes</HText>
-            <p className='py-5'>
+            <p className='py-5 text-onyx-black'>
               If it’s about sweat we have Cardio, if it’s about being stronger we have Strength & Conditioning or if
               it’s about flexibility we have Mind & Body. Whatever you are into we have 100's of classes to help you
               work towards your fitness goals. They are all completely free, with a packed timetable that is open and

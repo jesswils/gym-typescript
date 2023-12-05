@@ -57,7 +57,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>More than just a gym</HText>
-          <p className='my-5 text-md'>
+          <p className='my-5 text-md text-dark-brown'>
             We're here for everyday people, to become strong individuals. We provide world class fitness equipment,
             trainers and classes to help you find and reach your fitness goals. We put true care into all of our members
             and are here to support you every step of the way.
@@ -109,7 +109,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 >
                   <HText>
                     Millions of happy members getting{' '}
-                    <span className='text-carribean-blue font-golos drop-shadow-sm  saturate-100 '>
+                    <span className='text-carribean-blue font-golos drop-shadow-sm saturate-100 '>
                       fit
                     </span>
                   </HText>
@@ -127,13 +127,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <p className='my-5'>
+              <p className='my-5 text-dark-brown'>
                 Nascetur aenean massa auctor tincidunt. Iaculis potenti amet egestas ultrices consectetur adipiscing
                 ultricies enim. Pulvinar fames vitae vitae quis. Quis amet vulputate tincidunt at in nulla nec.
                 Consequat sed facilisis dui sit egestas ultrices tellus. Ullamcorper arcu id pretium sapien proin
                 integer nisl. Felis orci diam odio.
               </p>
-              <p className='mb-5'>
+              <p className='mb-5 text-dark-brown'>
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam porttitor. Mauris velit
                 euismod elementum arcu neque facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim mattis
                 odio in risus nunc.
