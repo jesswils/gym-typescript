@@ -12,22 +12,23 @@ type Props = {
 
 const benefits: Array<BenefitType> = [
   {
-    icon: <HomeIcon className='h-6 w-6' />,
+    icon: <HomeIcon className='h-6' />,
     title: 'State of the art facilities',
     description:
-      'Cardiovascular area, function fitness area, free weights, stretching and mobility area and personal training.',
+      `Cardiovascular area, function fitness area, free weights, stretching and mobility area and personal training. `,
   },
   {
-    icon: <UserGroupIcon className='h-6 w-6' />,
+    icon: <UserGroupIcon className='h-6' />,
     title: "100's of diverse classes",
     description:
       'We host over 240 fitness classes every week with various early morning and evening sessions available, so you’re sure to find the right class for you.',
   },
   {
-    icon: <AcademicCapIcon className='h-6 w-6' />,
+    icon: <AcademicCapIcon className='h-6' />,
     title: 'Expert trainers',
     description:
-      'All personal trainers are fully-accredited and dedicated to your self-improvement. They will help you meet your goals faster, and provide you with the knowledge and confidence to work out on your own.',
+      `All personal trainers are fully-accredited and dedicated to your self-improvement.
+      We're here for everyday people, to become strong individuals.`,
   },
 ];
 
@@ -40,7 +41,7 @@ const container = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id='benefits' className='mx-auto min-h-full w-5/6 pt-20'>
+    <section id='benefits' className='mx-auto w-5/6 pt-20'>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -66,7 +67,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
         {/* benefits */}
         <motion.div
-          className='mt-5 items-center justify-between gap-8 md:flex'
+          className='flex mt-5 items-center gap-8'
           initial='hidden'
           whileInView='visible'
           viewport={{ amount: 0.5 }}
@@ -127,20 +128,24 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <p className='my-5 text-dark-brown'>
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet egestas ultrices consectetur adipiscing
-                ultricies enim. Pulvinar fames vitae vitae quis. Quis amet vulputate tincidunt at in nulla nec.
-                Consequat sed facilisis dui sit egestas ultrices tellus. Ullamcorper arcu id pretium sapien proin
-                integer nisl. Felis orci diam odio.
+              <p className='my-5 text-dark-brown leading-normal mb-1'>
+              We welcome all bodies to our gym.
+              <br></br>
+              We create an inclusive and welcoming space for people to exercise without judgement.
+              <br></br>
+              <br></br>
+              We believe that the benefits of exercise should be made accessible, affordable and adaptive for everyone. Regardless of their gender, ethnicity, identity, ability or body shape.
+              Inclusive and social, with plenty of time to chat in between activities, based around a circuit which means you get a full-body workout tailored to your individual needs.
+              <br></br>
+    Being member-run means we can provide social health and fitness activities in an environment where we can feel comfortable and supported.
               </p>
               <p className='mb-5 text-dark-brown'>
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam porttitor. Mauris velit
-                euismod elementum arcu neque facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim mattis
-                odio in risus nunc.
+              We offer a range of strength and weightlifting classes classes, and also put on events and affordable community classes.
+              Our space has been designed by and for our members, making it a unique space to come and train.
               </p>
             </motion.div>
             {/* button */}
-            <div className='relative mt-3'>
+            <div className='relative mt-10'>
               <div className='before:content-leaves before:absolute before:-bottom-20 before:right-40 before:z-[-1]'>
                 <ActionButton setSelectedPage={setSelectedPage} isTopOfPage >
                   Join Now
