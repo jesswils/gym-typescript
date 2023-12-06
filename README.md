@@ -1,6 +1,6 @@
 # Gym SPA
 
-This is a React website bootstrapped with Vite, based on the tutorial by Ed Roh: https://www.youtube.com/watch?v=I2NNxr3WPDo
+This is a React and Tailwind website bootstrapped with Vite, based on the tutorial by Ed Roh: https://www.youtube.com/watch?v=I2NNxr3WPDo. 
 
 <img src="src\assets\github.png" alt="screenshot of homepage"/>
 
