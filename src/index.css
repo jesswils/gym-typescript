@@ -43,3 +43,7 @@ body,
 li {
     text-decoration: none;
 }
+
+.contact-us {
+    border-radius: 10px 200px 10px;
+}

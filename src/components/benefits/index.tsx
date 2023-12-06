@@ -1,4 +1,4 @@
-import BenefitsPageGraphic from '@/assets/benefits-page-graphic.png';
+import BenefitsPageGraphic from '@/assets/benefits-graphic.png';
 import ActionButton from '@/utils/ActionButton';
 import HText from '@/utils/HText';
 import { BenefitType, SelectedPage } from '@/utils/types';
@@ -40,7 +40,7 @@ const container = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id='benefits' className='mx-auto min-h-full w-5/6 py-20'>
+    <section id='benefits' className='mx-auto min-h-full w-5/6 pt-20'>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -142,7 +142,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             {/* button */}
             <div className='relative mt-3'>
               <div className='before:content-leaves before:absolute before:-bottom-20 before:right-40 before:z-[-1]'>
-                <ActionButton setSelectedPage={setSelectedPage}>
+                <ActionButton setSelectedPage={setSelectedPage} isTopOfPage >
                   Join Now
                 </ActionButton>
               </div>
