@@ -3,7 +3,7 @@ import image2 from '@/assets/image2.jpg';
 import image3 from '@/assets/image3.jpg';
 import image4 from '@/assets/image4.jpg';
 import image5 from '@/assets/image5.jpg';
-import image6 from '@/assets/image6.jpg'
+import image6 from '@/assets/image6.jpg';
 import HText from '@/utils/HText';
 import { ClassType, SelectedPage } from '@/utils/types';
 import { motion } from 'framer-motion';
@@ -39,8 +39,7 @@ const classes: Array<ClassType> = [
   },
   {
     name: 'Mind and Body',
-    description:
-      `Work on your flexibility, core strength & mental wellbeing. 
+    description: `Work on your flexibility, core strength & mental wellbeing. 
       Using the breath to lead us, we’ll move through a sequence of bodyweight movements to explore our range of mobility, and build stability and flexibility. We’ll also explore some playful balancing postures.
       Our Mind & Body classes will leave you feeling strong, calm & centred.`,
     image: image5,

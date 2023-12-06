@@ -142,7 +142,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 type='submit'
                 className='mt-1 rounded-lg bg-light-green text-onyx-black px-20 py-3 transition duration-500 hover:text-powder-white
                            hover:bg-carribean-blue'
-              title='submit the form to become a member'
+                title='submit the form to become a member'
               >
                 Submit
               </button>

@@ -24,9 +24,9 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
         variants={childVariant}
       >
         <div className='mb-2 flex justify-center text-carribean-blue'>
-            <div className='rounded border p-4 border-neutral'>
-              {icon}
-            </div>
+          <div className='rounded border p-4 border-neutral'>
+            {icon}
+          </div>
         </div>
         <h4 className='pt-0.5 font-medium text-dark-brown'>{title}</h4>
         <p className='my-3 text-dark-brown'>{description}</p>

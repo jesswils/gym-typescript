@@ -18,11 +18,11 @@ module.exports = {
         'light-green': '#d0d0d0',
         'tiffany-blue': '#78CDD7',
         'neutral': '#737373',
-        'accent' : '#DE983E',
-        'brown-grey' : '#3c3c3c',
-        'grey-brown' : '#6a6a6a',
-        'deep-brown' : '#4c2600',
-        'dark-brown' : '#120900'
+        'accent': '#DE983E',
+        'brown-grey': '#3c3c3c',
+        'grey-brown': '#6a6a6a',
+        'deep-brown': '#4c2600',
+        'dark-brown': '#120900',
       },
       content: {
         gymtext: "url('./assets/truegym-text.png')",

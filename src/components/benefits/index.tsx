@@ -26,8 +26,7 @@ const benefits: Array<BenefitType> = [
   {
     icon: <AcademicCapIcon className='h-6' />,
     title: 'Expert trainers',
-    description:
-      `All personal trainers are fully-accredited and dedicated to your self-improvement.
+    description: `All personal trainers are fully-accredited and dedicated to your self-improvement.
       We're here for everyday people, to become strong individuals.`,
   },
 ];
@@ -129,25 +128,29 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className='my-5 text-dark-brown leading-normal mb-1'>
-              We welcome all bodies to our gym.
-              <br></br>
-              We create an inclusive and welcoming space for people to exercise without judgement.
-              <br></br>
-              <br></br>
-              We believe that the benefits of exercise should be made accessible, affordable and adaptive for everyone. Regardless of their gender, ethnicity, identity, ability or body shape.
-              Inclusive and social, with plenty of time to chat in between activities, based around a circuit which means you get a full-body workout tailored to your individual needs.
-              <br></br>
-    Being member-run means we can provide social health and fitness activities in an environment where we can feel comfortable and supported.
+                We welcome all bodies to our gym.
+                <br></br>
+                We create an inclusive and welcoming space for people to exercise without judgement.
+                <br></br>
+                <br></br>
+                We believe that the benefits of exercise should be made accessible, affordable and adaptive for
+                everyone. Regardless of their gender, ethnicity, identity, ability or body shape. Inclusive and social,
+                with plenty of time to chat in between activities, based around a circuit which means you get a
+                full-body workout tailored to your individual needs.
+                <br></br>
+                Being member-run means we can provide social health and fitness activities in an environment where we
+                can feel comfortable and supported.
               </p>
               <p className='mb-5 text-dark-brown'>
-              We offer a range of strength and weightlifting classes classes, and also put on events and affordable community classes.
-              Our space has been designed by and for our members, making it a unique space to come and train.
+                We offer a range of strength and weightlifting classes classes, and also put on events and affordable
+                community classes. Our space has been designed by and for our members, making it a unique space to come
+                and train.
               </p>
             </motion.div>
             {/* button */}
             <div className='relative mt-10'>
               <div className='before:content-leaves before:absolute before:-bottom-20 before:right-40 before:z-[-1]'>
-                <ActionButton setSelectedPage={setSelectedPage} isTopOfPage >
+                <ActionButton setSelectedPage={setSelectedPage} isTopOfPage>
                   Join Now
                 </ActionButton>
               </div>
