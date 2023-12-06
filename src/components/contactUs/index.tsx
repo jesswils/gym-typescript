@@ -47,7 +47,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             </span>{' '}
             to achieve your fitness goals.
           </HText>
-          <p className='my-5'>
+          <p className='my-5 text-dark-brown'>
             If you would like to discuss anything from booking a class, finding out membership prices or scheduling a
             free trial, simply complete all details on the form below and a member of the team will be in touch with you
             as soon as possible.
@@ -140,7 +140,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <button
                 type='submit'
-                className='mt-1 rounded-lg bg-light-green px-20 py-3 transition duration-500 hover:text-powder-white
+                className='mt-1 rounded-lg bg-light-green text-onyx-black px-20 py-3 transition duration-500 hover:text-powder-white
                            hover:bg-carribean-blue'
               title='submit the form to become a member'
               >
@@ -162,7 +162,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           >
             <div className='md:before:content-gymtext w-full before:absolute before:-bottom-20 before:right-10 before:z-[-1] opacity-75'>
               <img
-                className='w-full rounded-lg'
+                className='w-full border contact-us outline outline-offset-2 outline-1 outline-carribean-blue'
                 alt='contact-us-page-graphic'
                 src={contactUsPageGraphic}
               />
